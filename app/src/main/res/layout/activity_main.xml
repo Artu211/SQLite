@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sekcja dodawania -->
+        <EditText
+            android:id="@+id/noteTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tytuł notatki" />
+
+        <EditText
+            android:id="@+id/noteInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Treść notatki" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zapisz notatkę" />
+
+        <!-- Sekcja usuwania -->
+        <EditText
+            android:id="@+id/deleteIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID notatki do usunięcia"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuń notatkę" />
+
+        <!-- Sekcja aktualizacji -->
+        <EditText
+            android:id="@+id/updateIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID notatki do aktualizacji"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/updateTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nowy tytuł (opcjonalnie)" />
+
+        <EditText
+            android:id="@+id/updateNoteInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nowa treść notatki" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktualizuj notatkę" />
+
+        <!-- Wyświetlanie notatek -->
+        <TextView
+            android:id="@+id/notesDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
