@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Sekcja dodawania -->
+
         <EditText
             android:id="@+id/noteTitleInput"
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="Zapisz notatkę" />
 
-        <!-- Sekcja usuwania -->
+
         <EditText
             android:id="@+id/deleteIdInput"
             android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:text="Usuń notatkę" />
 
-        <!-- Sekcja aktualizacji -->
+
         <EditText
             android:id="@+id/updateIdInput"
             android:layout_width="match_parent"
@@ -68,13 +68,22 @@
             android:layout_height="wrap_content"
             android:text="Aktualizuj notatkę" />
 
-        <!-- Wyświetlanie notatek -->
+
         <TextView
-            android:id="@+id/notesDisplay"
+            android:id="@+id/emptyView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:textSize="16sp" />
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Brak notatek. Dodaj pierwszą!"
+            android:visibility="gone" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp" />
 
     </LinearLayout>
 </ScrollView>
